@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="VICTORIS is a modern luxury handbag brand offering elegant handbags, work bags, shoulder bags, totes and statement pieces for confident women.">
+
+<meta name="keywords" content="luxury handbags, premium handbags, women's handbags, designer handbags, work bags, tote bags, shoulder bags, VICTORIS">
+
+<link rel="canonical" href="https://victorisa.netlify.app/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VICTORIS | Luxury Handbags</title>
+    <meta name="description" content="VICTORIS — luxury handbags designed for women who lead, create and inspire.">
+    <meta name="keywords" content="luxury handbags, premium bags, women's handbags, VICTORIS">
+    <meta name="author" content="VICTORIS">
+
+    <meta property="og:title" content="VICTORIS | Luxury Handbags">
+    <meta property="og:description" content="Carry Your Ambition.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Brand",
+  "name": "VICTORIS",
+  "url": "https://victorisa.netlify.app/",
+  "description": "VICTORIS is a modern luxury handbag brand offering elegant handbags, work bags, shoulder bags, totes and statement pieces.",
+  "slogan": "Carry Your Ambition."
+}
+</script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">VICTORIS</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#collections">Collections</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-icons">
+            <button onclick="openSearch()">⌕</button>
+            <button onclick="openCart()">🛍 <span id="cart-count">0</span></button>
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="small-title">VICTORIS</p>
+
+            <h1>Carry Your<br>Ambition.</h1>
+
+            <p>
+                Luxury handbags designed for women who lead,
+                create and inspire.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#shop" class="btn primary">SHOP COLLECTION</a>
+                <a href="#about" class="btn secondary">DISCOVER VICTORIS</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+    <section class="intro">
+        <p class="small-title">THE VICTORIS WOMAN</p>
+
+        <h2>Designed for women<br>who make their own way.</h2>
+
+        <p>
+            From the boardroom to the evening city,
+            VICTORIS creates sophisticated handbags
+            made to move with confidence.
+        </p>
+    </section>
+
+
+    <!-- SHOP -->
+    <section class="shop" id="shop">
+
+        <div class="section-heading">
+            <p class="small-title">THE COLLECTION</p>
+            <h2>Featured Handbags</h2>
+            <p>Refined silhouettes. Powerful presence.</p>
+        </div>
+
+        <div class="product-grid">
+
+            <!-- PRODUCT 1 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80"
+                         alt="Black VICTORIS luxury handbag">
+                </div>
+
+                <div class="product-info">
+                    <h3>The Victoria</h3>
+                    <p>Structured leather handbag with signature gold detailing.</p>
+                    <span>₹18,999</span>
+
+                    <button onclick="addToCart('The Victoria', 18999)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=800&q=80"
+                         alt="Cream VICTORIS luxury handbag">
+                </div>
+
+                <div class="product-info">
+                    <h3>The Aurelia</h3>
+                    <p>Elegant cream handbag designed for effortless sophistication.</p>
+                    <span>₹16,499</span>
+
+                    <button onclick="addToCart('The Aurelia', 16499)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80"
+                         alt="Brown VICTORIS luxury shoulder bag">
+                </div>
+
+                <div class="product-info">
+                    <h3>The Verona</h3>
+                    <p>Modern shoulder bag with a timeless luxury finish.</p>
+                    <span>₹14,999</span>
+
+                    <button onclick="addToCart('The Verona', 14999)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- COLLECTIONS -->
+    <section class="collections" id="collections">
+
+        <div class="section-heading">
+            <p class="small-title">EXPLORE</p>
+            <h2>Our Collections</h2>
+        </div>
+
+        <div class="collection-grid">
+
+            <div class="collection-card">
+                <h3>The Executive Edit</h3>
+                <p>Powerful silhouettes for ambitious days.</p>
+            </div>
+
+            <div class="collection-card">
+                <h3>The Evening Edit</h3>
+                <p>Statement pieces for unforgettable nights.</p>
+            </div>
+
+            <div class="collection-card">
+                <h3>The Signature Collection</h3>
+                <p>Iconic designs made to become your signature.</p>
+            </div>
+
+            <div class="collection-card">
+                <h3>Limited Edition</h3>
+                <p>Exclusive pieces created for a limited time.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="about-text">
+            <p class="small-title">OUR STORY</p>
+
+            <h2>Luxury with<br>purpose.</h2>
+
+            <p>
+                VICTORIS was created around one simple idea:
+                what you carry should reflect who you are
+                and where you are going.
+            </p>
+
+            <p>
+                Every silhouette combines modern design,
+                confident details and timeless elegance.
+            </p>
+
+            <a href="#contact" class="btn primary">LEARN MORE</a>
+        </div>
+
+    </section>
+
+
+    <!-- WHY VICTORIS -->
+    <section class="features">
+
+        <div class="section-heading">
+            <p class="small-title">THE VICTORIS STANDARD</p>
+            <h2>Made for more.</h2>
+        </div>
+
+        <div class="feature-grid">
+
+            <div>
+                <h3>01</h3>
+                <h4>Modern Design</h4>
+                <p>Clean silhouettes created for today's woman.</p>
+            </div>
+
+            <div>
+                <h3>02</h3>
+                <h4>Premium Details</h4>
+                <p>Thoughtful finishes that elevate every piece.</p>
+            </div>
+
+            <div>
+                <h3>03</h3>
+                <h4>Made to Stand Out</h4>
+                <p>Luxury pieces designed to make an impression.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+
+        <p class="small-title">STAY IN THE KNOW</p>
+
+        <h2>Join the VICTORIS world.</h2>
+
+        <p>Be the first to discover new collections and exclusive pieces.</p>
+
+        <form onsubmit="subscribe(event)">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit">SUBSCRIBE</button>
+        </form>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <div class="section-heading">
+            <p class="small-title">GET IN TOUCH</p>
+            <h2>Contact VICTORIS</h2>
+        </div>
+
+        <form class="contact-form" onsubmit="submitForm(event)">
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="email" placeholder="Email Address" required>
+
+            <input type="tel" placeholder="Phone Number">
+
+            <input type="text" placeholder="Subject" required>
+
+            <textarea placeholder="Your Message" rows="6" required></textarea>
+
+            <button type="submit" class="btn primary">
+                SEND MESSAGE
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-brand">
+            <h2>VICTORIS</h2>
+            <p>Carry Your Ambition.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>QUICK LINKS</h4>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#collections">Collections</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+            <h4>CONTACT</h4>
+            <p>hello@victoris.com</p>
+            <p>+91 98765 43210</p>
+            <p>Pune, Maharashtra, India</p>
+        </div>
+
+        <div class="social">
+            <h4>FOLLOW</h4>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Pinterest</a>
+            <a href="#">YouTube</a>
+        </div>
+
+        <div class="copyright">
+            © 2026 VICTORIS. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- CART -->
+    <div id="cart-panel" class="cart-panel">
+
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button onclick="closeCart()">×</button>
+        </div>
+
+        <div id="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+
+        <div class="cart-total">
+            <strong>Subtotal:</strong>
+            ₹<span id="cart-total">0</span>
+        </div>
+
+        <button class="checkout-btn" onclick="checkout()">
+            CHECKOUT
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
